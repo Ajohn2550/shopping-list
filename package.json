@@ -1,0 +1,36 @@
+{
+  "name": "shopping-list",
+  "version": "1.0.0",
+  "description": "shopping list app",
+  "main": "index.js",
+  "scripts": {
+    "cover": "npm run test && nyc report --reporter=lcov",
+    "lint": "eslint-godaddy lib/ test/",
+    "start": "node index.js",
+    "test": "npm run lint && npm run unit",
+    "unit": "nyc node_modules/.bin/_mocha tests/unit --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ajohn2550/shopping-list.git"
+  },
+  "author": "ajohn2550",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/Ajohn2550/shopping-list/issues"
+  },
+  "homepage": "https://github.com/Ajohn2550/shopping-list#readme",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "coveralls": "^3.0.0",
+    "eslint": "^4.10.0",
+    "eslint-config-godaddy": "^2.0.0",
+    "eslint-plugin-json": "^1.2.0",
+    "eslint-plugin-mocha": "^4.11.0",
+    "mocha": "^4.0.1",
+    "nyc": "^11.3.0"
+  },
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
