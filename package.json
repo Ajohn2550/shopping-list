@@ -28,7 +28,8 @@
     "eslint-plugin-json": "^1.2.0",
     "eslint-plugin-mocha": "^4.11.0",
     "mocha": "^4.0.1",
-    "nyc": "^11.3.0"
+    "nyc": "^11.3.0",
+    "supertest": "^3.0.0"
   },
   "dependencies": {
     "express": "^4.16.2"
